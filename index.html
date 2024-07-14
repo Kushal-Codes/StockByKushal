@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio Profit/Loss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Portfolio Profit/Loss</h1>
+        
+        <!-- Form to input stock data -->
+        <form id="stock-form">
+            <div class="form-group">
+                <label for="stockName">Stock Name:</label>
+                <input type="text" id="stockName" required>
+            </div>
+            <div class="form-group">
+                <label for="purchasePrice">Purchase Price (NPR):</label>
+                <input type="number" id="purchasePrice">
+            </div>
+            <div class="form-group">
+                <label for="numberOfStocks">Number of Stocks:</label>
+                <input type="number" id="numberOfStocks" required>
+            </div>
+            <div class="form-group">
+                <label for="currentPrice">Current Price (NPR):</label>
+                <input type="number" id="currentPrice" required>
+            </div>
+            <div class="form-group">
+                <label for="ipo">IPO:</label>
+                <input type="checkbox" id="ipo">
+            </div>
+            <button type="submit">Add Stock</button>
+        </form>
+        
+        <table id="stocks-table">
+            <thead>
+                <tr>
+                    <th>Stock</th>
+                    <th>Purchase Price (NPR)</th>
+                    <th>Number of Stocks</th>
+                    <th>Current Price (NPR)</th>
+                    <th>Profit/Loss (NPR)</th>
+                </tr>
+            </thead>
+            <tbody id="stocks-tbody">
+                <!-- Rows will be added here by JavaScript -->
+            </tbody>
+        </table>
+        <div id="total-result">
+            <!-- Total profit/loss will be displayed here -->
+        </div>
+        <div id="total-balance">
+            <!-- Total current balance will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
